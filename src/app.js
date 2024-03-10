@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   document.querySelector("#btn").addEventListener("click", () => {
-    document.querySelector("#the-excuse").innerHTML - generateExcuse();
+    document.querySelector("#the-excuse").innerHTML = generateExcuse();
   });
 };
 
@@ -29,12 +29,6 @@ let generateExcuse = () => {
   let cuando = Math.floor(Math.random() * when.length);
 
   return (
-    who[quien.length] +
-    " " +
-    action[accion.length] +
-    " " +
-    what[que.length] +
-    " " +
-    when[cuando.length]
+    who[quien] + " " + action[accion] + " " + what[que] + " " + when[cuando]
   );
 };
